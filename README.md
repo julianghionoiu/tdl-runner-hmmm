@@ -13,3 +13,11 @@ The file `language.tdl` should contain a unique string describing the language. 
 The `get_coverage_for_challenge.sh` script is triggered and the expectation is that is should return a zero status code.
 Upon succesful completion, the coverage value should be located into the `coverage.tdl` file.
  
+## 3. The "done" tags
+
+The repo is tagged in a similar way a candidate runner repo will be tagged upon round completion.
+Currently there are two tags defined:
+- TCH_R1/done - 33% coverage
+- TCH_R2/done - 44% coverage
+
+
