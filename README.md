@@ -20,4 +20,25 @@ Currently there are two tags defined:
 - TCH_R1/done - 33% coverage
 - TCH_R2/done - 44% coverage
 
+## 4. Check for CRLF
+
+`script_with_CRLF.sh` contains CRLF, other files are free from it.
+
+Use the below command to test out if files contain CRLF or not
+
+```
+find . -not -type d -exec file "{}" ";" | grep CRLF
+```
+
+Use the below `git` command when saving a file with CRLF (and preventing automatic conversion):
+
+```
+git config core.autocrlf false
+```
+
+Set it back to `true` to enable auto-conversion from `dos` to `unix` format:
+
+```
+git config core.autocrlf true 
+```
 
